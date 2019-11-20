@@ -88,7 +88,7 @@ namespace SalesWebMvc.Controllers
             if (id == null)
             {
                 //return NotFound();
-                return RedirectToAction(nameof(Error), new { message = "Id not provided"});
+                return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
 
             var seller = _sellerService.FindById(id.Value);
@@ -105,7 +105,7 @@ namespace SalesWebMvc.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Seller seller) 
+        public IActionResult Edit(int id, Seller seller)
         {
             if (id != seller.Id)
             {
@@ -137,4 +137,5 @@ namespace SalesWebMvc.Controllers
 
             return View(viewModel);
         }
+    }
 }

@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="wwwroot\Controllers\DepartmentsController.cs" />
-    <Compile Include="wwwroot\Controllers\HomeController.cs" />
-    <Compile Include="wwwroot\Controllers\SellersController.cs" />
+    <Content Include="Controllers\DepartmentsController.cs" />
+    <Content Include="Controllers\HomeController.cs" />
+    <Content Include="Controllers\SellersController.cs" />
   </ItemGroup>
 
   <ItemGroup>
